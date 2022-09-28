@@ -3,7 +3,7 @@ SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 
 source "$SCRIPT_DIR/../functions.sh"
 name="benchmark-$(random_name)"
-provider="DigitalOceans"
+provider="DigitalOcean"
 pool="pool$(random_name)"
 
 cleanup() {
