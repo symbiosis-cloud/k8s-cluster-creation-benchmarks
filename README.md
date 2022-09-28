@@ -1,56 +1,61 @@
 # Kubernetes Cluster Creation Benchmarks
--------
+
+---
 
 ## What are we benchmarking?
 
 We are benchmarking:
 
-* Cluster creation
-* Cluster ready to use
-* Scaling a node pool (+1 node)
+- Cluster creation
+- Cluster ready to use
+- Scaling a node pool (+1 node)
 
 ## Requirements
 
-* curl
-* bash
-* jq
+- curl
+- bash
+- jq
 
+## How to run
 
-Per cloud provider:
+```sh
+# this will take quite a long time
+$ bash benchmark_all.sh 10 # run the benchmark 10 times
+```
+
+## Installation
 
 ### Symbiosis
 
-* only curl and jq are required
+- only curl and jq are required
 
 ### AWS
 
-* Configured AWS CLI
-* eksctl
+- Configured AWS CLI
+- eksctl
 
 ### CIVO
 
-* Configured CIVO CLI
+- Configured CIVO CLI
 
 ### Azure
 
-* Configured Azure CLI
+- Configured Azure CLI
 
 ** Note ** A resource group called benchmark-azure will be created but not removed automatically.
 
 ### Scaleway
 
-* Configured Sclaway CL
+- Configured Sclaway CL
 
 ### Linode
 
-* Configured Linode CLI
+- Configured Linode CLI
 
 ### Google Cloud
 
-* Configured Google Cloud CLI
+- Configured Google Cloud CLI
 
 ### Digitalocean
 
-* Configured Digitalocean CLI
-
-
+- Configured Digitalocean CLI

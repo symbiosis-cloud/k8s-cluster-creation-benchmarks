@@ -3,7 +3,7 @@ SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 
 source "$SCRIPT_DIR/functions.sh"
 # controls how many benchmarks are run per provider
-times=10
+times=$1
 
 pids=""
 for i in $(seq 1 ${times}); do
